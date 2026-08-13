@@ -1,0 +1,910 @@
+/* ==================================================
+   JOIN THE MOVEMENT
+================================================== */
+
+
+/* ================= HERO ================= */
+
+.join-hero {
+
+    min-height: 720px;
+
+    margin: 0 20px;
+
+    padding: 180px 8% 100px;
+
+    background: var(--orange);
+
+    border-left: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border);
+
+    border-radius: 0 0 50px 50px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.join-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
+}
+
+
+.join-hero h1 {
+
+    font-size: clamp(75px, 10vw, 150px);
+
+    line-height: 0.78;
+
+    letter-spacing: -8px;
+}
+
+
+.join-hero h1 span {
+
+    color: var(--blue);
+}
+
+
+.join-hero p {
+
+    max-width: 570px;
+
+    margin-top: 35px;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+}
+
+
+/* BUBBLES */
+
+.join-bubble {
+
+    position: absolute;
+
+    border: 5px solid rgba(255,255,255,0.4);
+
+    border-radius: 50%;
+
+    animation: joinFloat 6s ease-in-out infinite;
+}
+
+
+.join-bubble-1 {
+
+    width: 450px;
+    height: 450px;
+
+    right: -100px;
+    top: 80px;
+}
+
+
+.join-bubble-2 {
+
+    width: 190px;
+    height: 190px;
+
+    right: 28%;
+    bottom: -70px;
+
+    animation-delay: 1s;
+}
+
+
+.join-bubble-3 {
+
+    width: 70px;
+    height: 70px;
+
+    left: 58%;
+    top: 180px;
+
+    animation-delay: 2s;
+}
+
+
+@keyframes joinFloat {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+}
+
+
+/* STICKER */
+
+.join-sticker {
+
+    position: absolute;
+
+    right: 12%;
+    bottom: 90px;
+
+    width: 155px;
+    height: 155px;
+
+    border-radius: 50%;
+
+    background: var(--blue);
+
+    color: white;
+
+    border: var(--border);
+
+    box-shadow: 8px 8px 0 var(--black);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    transform: rotate(8deg);
+}
+
+
+.join-sticker strong {
+
+    font-size: 30px;
+
+    color: var(--orange);
+}
+
+
+.join-sticker span {
+
+    margin-top: 5px;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    line-height: 1.1;
+}
+
+
+/* ================= PATHS ================= */
+
+.join-paths {
+
+    padding: 120px 8%;
+
+    background: var(--cream);
+}
+
+
+.join-heading h2 {
+
+    font-size: clamp(60px, 8vw, 115px);
+
+    line-height: 0.8;
+
+    letter-spacing: -7px;
+
+}
+
+
+.join-heading h2 span {
+
+    color: var(--blue);
+}
+
+
+.path-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 70px;
+}
+
+
+.path-card {
+
+    min-height: 390px;
+
+    padding: 30px;
+
+    border: var(--border);
+
+    border-radius: 30px;
+
+    box-shadow: 7px 7px 0 var(--black);
+
+    position: relative;
+
+    transition: 0.3s;
+}
+
+
+.path-card:hover {
+
+    transform: translateY(-10px) rotate(-1deg);
+
+    box-shadow: 12px 12px 0 var(--black);
+}
+
+
+.blue-path {
+
+    background: var(--blue);
+
+    color: white;
+}
+
+
+.orange-path {
+
+    background: var(--orange);
+
+}
+
+
+.cream-path {
+
+    background: white;
+
+}
+
+
+.path-number {
+
+    font-size: 12px;
+
+    font-weight: 900;
+}
+
+
+.path-icon {
+
+    font-size: 55px;
+
+    margin-top: 55px;
+}
+
+
+.path-card h3 {
+
+    font-size: 31px;
+
+    line-height: 1;
+
+    margin: 20px 0 15px;
+}
+
+
+.path-card p {
+
+    max-width: 400px;
+
+    line-height: 1.6;
+}
+
+
+.path-link {
+
+    position: absolute;
+
+    left: 30px;
+
+    bottom: 28px;
+
+    font-weight: 900;
+
+    font-size: 11px;
+
+    border-bottom: 3px solid currentColor;
+
+}
+
+
+/* ================= OIL GUIDE ================= */
+
+.guide-section {
+
+    padding: 120px 8%;
+
+    background: var(--blue);
+
+    color: white;
+
+    display: grid;
+
+    grid-template-columns: 120px 1fr;
+
+    gap: 40px;
+
+    border-top: var(--border);
+
+    border-bottom: var(--border);
+}
+
+
+.guide-number {
+
+    width: 85px;
+    height: 85px;
+
+    border: 4px solid white;
+
+    border-radius: 50%;
+
+    background: var(--orange);
+
+    color: var(--black);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+    font-weight: 950;
+}
+
+
+.guide-content {
+
+    max-width: 1000px;
+}
+
+
+.guide-content h2 {
+
+    font-size: clamp(60px, 8vw, 115px);
+
+    line-height: 0.8;
+
+    letter-spacing: -7px;
+}
+
+
+.guide-content h2 span {
+
+    color: var(--orange);
+}
+
+
+.guide-intro {
+
+    max-width: 650px;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    margin: 35px 0 55px;
+}
+
+
+.steps {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.step {
+
+    padding: 25px;
+
+    border: 3px solid white;
+
+    border-radius: 25px;
+
+    display: flex;
+
+    gap: 20px;
+
+    background: rgba(255,255,255,0.08);
+
+}
+
+
+.step-number {
+
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: var(--orange);
+
+    color: var(--black);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 900;
+}
+
+
+.step h3 {
+
+    font-size: 19px;
+}
+
+
+.step p {
+
+    color: #d9e1e8;
+
+    line-height: 1.5;
+
+    margin-top: 7px;
+}
+
+
+/* ================= SOAP ================= */
+
+.soap-section {
+
+    min-height: 650px;
+
+    padding: 120px 8%;
+
+    background: var(--cream);
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 90px;
+
+    align-items: center;
+}
+
+
+.soap-visual {
+
+    min-height: 500px;
+
+    background: var(--orange);
+
+    border: var(--border);
+
+    border-radius: 40px;
+
+    box-shadow: 9px 9px 0 var(--black);
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+.soap-circle {
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    border: 5px solid var(--black);
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 105px;
+
+    box-shadow: 12px 12px 0 var(--black);
+}
+
+
+.soap-bubble {
+
+    position: absolute;
+
+    border: 4px solid var(--black);
+
+    background: rgba(255,255,255,0.4);
+
+    border-radius: 50%;
+}
+
+
+.bubble-small-1 {
+
+    width: 80px;
+    height: 80px;
+
+    left: 60px;
+    top: 70px;
+}
+
+
+.bubble-small-2 {
+
+    width: 45px;
+    height: 45px;
+
+    right: 80px;
+    top: 90px;
+}
+
+
+.bubble-small-3 {
+
+    width: 110px;
+    height: 110px;
+
+    right: 30px;
+    bottom: 25px;
+}
+
+
+.soap-content h2 {
+
+    font-size: clamp(60px, 8vw, 110px);
+
+    line-height: 0.8;
+
+    letter-spacing: -7px;
+}
+
+
+.soap-content h2 span {
+
+    color: var(--blue);
+}
+
+
+.soap-content > p {
+
+    max-width: 550px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #555f66;
+
+    margin: 30px 0;
+}
+
+
+.soap-info-card {
+
+    padding: 25px;
+
+    background: var(--blue);
+
+    color: white;
+
+    border: var(--border);
+
+    border-radius: 25px;
+
+    box-shadow: 6px 6px 0 var(--black);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+.soap-info-card span {
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+}
+
+
+.soap-info-card strong {
+
+    font-size: 22px;
+
+    color: var(--orange);
+
+}
+
+
+.soap-info-card a {
+
+    margin-top: 10px;
+
+    font-weight: 900;
+
+    font-size: 11px;
+
+}
+
+
+/* ================= COLLAB ================= */
+
+.collaboration-section {
+
+    padding: 120px 8%;
+
+    background: #e8f4ff;
+
+    border-top: var(--border);
+
+    border-bottom: var(--border);
+}
+
+
+.collaboration-header {
+
+    max-width: 850px;
+
+}
+
+
+.collaboration-header h2 {
+
+    font-size: clamp(60px, 8vw, 115px);
+
+    line-height: 0.8;
+
+    letter-spacing: -7px;
+}
+
+
+.collaboration-header h2 span {
+
+    color: var(--orange);
+}
+
+
+.collaboration-header p {
+
+    max-width: 600px;
+
+    margin-top: 30px;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+.collab-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-top: 65px;
+}
+
+
+.collab-card {
+
+    padding: 28px;
+
+    min-height: 280px;
+
+    background: white;
+
+    border: var(--border);
+
+    border-radius: 25px;
+
+    box-shadow: 6px 6px 0 var(--black);
+
+    transition: 0.3s;
+}
+
+
+.collab-card:hover {
+
+    transform: translateY(-8px);
+}
+
+
+.collab-icon {
+
+    font-size: 43px;
+}
+
+
+.collab-card h3 {
+
+    font-size: 22px;
+
+    margin: 22px 0 10px;
+}
+
+
+.collab-card p {
+
+    color: #555f66;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+}
+
+
+/* ================= FINAL CTA ================= */
+
+.join-final {
+
+    min-height: 600px;
+
+    padding: 120px 8%;
+
+    background: var(--black);
+
+    color: white;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.join-final-content {
+
+    max-width: 900px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.join-final h2 {
+
+    font-size: clamp(65px, 9vw, 135px);
+
+    line-height: 0.78;
+
+    letter-spacing: -8px;
+}
+
+
+.join-final h2 span {
+
+    color: var(--orange);
+}
+
+
+.join-final p {
+
+    max-width: 600px;
+
+    margin: 35px 0;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #d4d7da;
+}
+
+
+.final-bubble {
+
+    position: absolute;
+
+    border: 5px solid rgba(255,255,255,0.15);
+
+    border-radius: 50%;
+}
+
+
+.bubble-final-1 {
+
+    width: 600px;
+    height: 600px;
+
+    right: -200px;
+    top: -150px;
+}
+
+
+.bubble-final-2 {
+
+    width: 220px;
+    height: 220px;
+
+    right: 25%;
+    bottom: -90px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .path-grid,
+    .steps {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .soap-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .collab-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .join-hero {
+
+        margin: 0 10px;
+
+    }
+
+    .guide-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .collab-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .join-sticker {
+
+        width: 115px;
+        height: 115px;
+
+    }
+
+}

@@ -1,0 +1,864 @@
+/* ==================================================
+   FROCALS PAGE
+================================================== */
+
+
+/* ================= HERO ================= */
+
+.frocal-hero {
+
+    min-height: 700px;
+
+    margin: 0 20px;
+
+    padding: 180px 8% 100px;
+
+    background: var(--blue);
+
+    color: white;
+
+    border-left: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border);
+
+    border-radius: 0 0 50px 50px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.frocal-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 800px;
+
+}
+
+
+.frocal-hero h1 {
+
+    font-size: clamp(80px, 12vw, 180px);
+
+    line-height: 0.78;
+
+    letter-spacing: -9px;
+
+    margin-top: 15px;
+
+}
+
+
+.frocal-hero h1 span {
+
+    color: var(--orange);
+
+}
+
+
+.frocal-hero p {
+
+    max-width: 600px;
+
+    margin-top: 40px;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+}
+
+
+/* HERO BUBBLES */
+
+.frocal-bubble {
+
+    position: absolute;
+
+    border: 5px solid rgba(255,255,255,0.25);
+
+    border-radius: 50%;
+
+    animation: frocalFloat 6s infinite ease-in-out;
+
+}
+
+
+.bubble-a {
+
+    width: 420px;
+    height: 420px;
+
+    right: -100px;
+    top: 120px;
+
+}
+
+
+.bubble-b {
+
+    width: 180px;
+    height: 180px;
+
+    right: 30%;
+    bottom: -70px;
+
+    animation-delay: 1s;
+
+}
+
+
+.bubble-c {
+
+    width: 70px;
+    height: 70px;
+
+    left: 55%;
+    top: 160px;
+
+    animation-delay: 2s;
+
+}
+
+
+@keyframes frocalFloat {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+}
+
+
+/* STICKER */
+
+.hero-sticker {
+
+    position: absolute;
+
+    right: 12%;
+
+    bottom: 100px;
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    background: var(--orange);
+
+    color: var(--black);
+
+    border: var(--border);
+
+    box-shadow: 8px 8px 0 var(--black);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    font-size: 40px;
+
+    transform: rotate(8deg);
+
+}
+
+
+.hero-sticker span {
+
+    font-size: 11px;
+
+    font-weight: 950;
+
+    line-height: 1.1;
+
+}
+
+
+/* ================= INTRO ================= */
+
+.frocal-intro {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 130px 7%;
+
+}
+
+
+.intro-label {
+
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    border: var(--border);
+
+    border-radius: 20px;
+
+    background: var(--light-orange);
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+}
+
+
+.frocal-intro h2 {
+
+    font-size: clamp(55px, 8vw, 115px);
+
+    line-height: 0.85;
+
+    letter-spacing: -6px;
+
+    margin-top: 30px;
+
+}
+
+
+.frocal-intro h2 span {
+
+    color: var(--blue);
+
+}
+
+
+.frocal-intro > p {
+
+    max-width: 650px;
+
+    margin-top: 40px;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    color: #505960;
+
+}
+
+
+/* ================= DIRECTORY ================= */
+
+.frocal-directory {
+
+    padding: 120px 8%;
+
+    background: #e8f4ff;
+
+    border-top: var(--border);
+
+    border-bottom: var(--border);
+
+}
+
+
+.directory-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 50px;
+
+}
+
+
+.directory-top h2 {
+
+    font-size: clamp(55px, 7vw, 100px);
+
+    line-height: 0.85;
+
+    letter-spacing: -6px;
+
+}
+
+
+.directory-top h2 span {
+
+    color: var(--orange);
+
+}
+
+
+.directory-top > p {
+
+    max-width: 400px;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+}
+
+
+/* ================= FILTER ================= */
+
+.filter-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin: 60px 0 40px;
+
+}
+
+
+.filter-btn {
+
+    padding: 13px 20px;
+
+    border: var(--border);
+
+    border-radius: 20px;
+
+    background: white;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.filter-btn:hover {
+
+    background: var(--orange);
+
+}
+
+
+.filter-btn.active {
+
+    background: var(--black);
+
+    color: white;
+
+}
+
+
+/* ================= GRID ================= */
+
+.frocal-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+
+/* ================= CARD ================= */
+
+.frocal-profile-card {
+
+    background: white;
+
+    border: var(--border);
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow: 7px 7px 0 var(--black);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.frocal-profile-card:hover {
+
+    transform: translateY(-10px) rotate(-1deg);
+
+    box-shadow: 12px 12px 0 var(--black);
+
+}
+
+
+.profile-image {
+
+    height: 400px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.profile-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+
+}
+
+
+.frocal-profile-card:hover .profile-image img {
+
+    transform: scale(1.07);
+
+}
+
+
+.location-tag {
+
+    position: absolute;
+
+    left: 20px;
+    top: 20px;
+
+    padding: 8px 13px;
+
+    background: white;
+
+    border: 3px solid var(--black);
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+}
+
+
+.open-card {
+
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    background: var(--orange);
+
+    border: var(--border);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+
+    font-weight: 900;
+
+    transition: 0.3s;
+
+}
+
+
+.frocal-profile-card:hover .open-card {
+
+    transform: rotate(45deg);
+
+}
+
+
+.profile-info {
+
+    padding: 25px;
+
+}
+
+
+.profile-category {
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    color: var(--blue);
+
+}
+
+
+.profile-info h3 {
+
+    font-size: 30px;
+
+    margin: 8px 0;
+
+}
+
+
+.profile-info p {
+
+    color: #666;
+
+}
+
+
+/* ================= MODAL ================= */
+
+.frocal-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 2000;
+
+    display: none;
+
+}
+
+
+.frocal-modal.show {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.modal-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.7);
+
+    backdrop-filter: blur(8px);
+
+}
+
+
+.modal-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1000px, 90%);
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    background: var(--cream);
+
+    border: 4px solid var(--black);
+
+    border-radius: 35px;
+
+    box-shadow: 12px 12px 0 var(--black);
+
+}
+
+
+.modal-close {
+
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
+
+    z-index: 3;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: var(--orange);
+
+    border: var(--border);
+
+    font-size: 30px;
+
+    font-weight: 900;
+
+    cursor: pointer;
+
+}
+
+
+.modal-image {
+
+    min-height: 600px;
+
+}
+
+
+.modal-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.modal-information {
+
+    padding: 60px 45px;
+
+}
+
+
+.modal-information > span {
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    color: var(--blue);
+
+}
+
+
+.modal-information h2 {
+
+    font-size: 55px;
+
+    line-height: 0.9;
+
+    letter-spacing: -3px;
+
+    margin: 12px 0;
+
+}
+
+
+.modal-location {
+
+    font-weight: 800;
+
+    font-size: 13px;
+
+}
+
+
+.modal-description {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin: 30px 0;
+
+}
+
+
+.modal-section {
+
+    margin-top: 30px;
+
+}
+
+
+.modal-section h3 {
+
+    font-size: 12px;
+
+    color: var(--orange);
+
+    letter-spacing: 1px;
+
+}
+
+
+.modal-section p {
+
+    margin-top: 8px;
+
+    line-height: 1.6;
+
+    color: #4c555c;
+
+}
+
+
+.modal-contact {
+
+    margin-top: 35px;
+
+    padding: 20px;
+
+    background: var(--orange);
+
+    border: var(--border);
+
+    border-radius: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.modal-contact span {
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+}
+
+
+.modal-contact strong {
+
+    font-size: 20px;
+
+}
+
+
+/* ================= CTA ================= */
+
+.frocal-cta {
+
+    text-align: center;
+
+    padding: 130px 7%;
+
+}
+
+
+.frocal-cta h2 {
+
+    font-size: clamp(60px, 9vw, 130px);
+
+    line-height: 0.8;
+
+    letter-spacing: -7px;
+
+}
+
+
+.frocal-cta h2 span {
+
+    color: var(--orange);
+
+}
+
+
+.frocal-cta p {
+
+    max-width: 500px;
+
+    margin: 35px auto;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 800px) {
+
+    .frocal-hero {
+
+        margin: 0 10px;
+
+    }
+
+    .hero-sticker {
+
+        right: 8%;
+
+        bottom: 50px;
+
+        width: 110px;
+        height: 110px;
+
+    }
+
+    .frocal-hero h1 {
+
+        letter-spacing: -4px;
+
+    }
+
+    .directory-top {
+
+        flex-direction: column;
+
+        align-items: start;
+
+    }
+
+    .frocal-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .modal-content {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .modal-image {
+
+        min-height: 300px;
+
+        height: 300px;
+
+    }
+
+    .modal-information {
+
+        padding: 40px 25px;
+
+    }
+
+}

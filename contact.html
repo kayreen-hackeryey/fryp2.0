@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | FryPals</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-bubble">◉</span>
+            <span>FRY<span class="orange-text">PALS</span></span>
+        </a>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="frocals.html">FROCALS</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="join.html">JOIN THE MOVEMENT</a>
+            <a href="contact.html" class="active">CONTACT</a>
+        </nav>
+
+        <a href="join.html" class="nav-button">
+            JOIN US <span>↗</span>
+        </a>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="contact-hero">
+
+        <div class="contact-bubble bubble-contact-1"></div>
+        <div class="contact-bubble bubble-contact-2"></div>
+
+        <div class="contact-hero-content">
+
+            <div class="section-tag">
+                01. GET IN TOUCH
+            </div>
+
+            <h1>
+                LET'S<br>
+                <span>TALK.</span>
+            </h1>
+
+            <p>
+                Have a question, want to collaborate, know a
+                local seller, or simply want to say hello?
+                We'd love to hear from you.
+            </p>
+
+        </div>
+
+        <div class="contact-sticker">
+            <span>HI!</span>
+            <strong>👋</strong>
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT INFO ================= -->
+
+    <section class="contact-info-section">
+
+        <div class="contact-intro">
+
+            <div class="section-tag">
+                02. FIND US
+            </div>
+
+            <h2>
+                WE'RE<br>
+                <span>HERE.</span>
+            </h2>
+
+            <p>
+                Reach out through whichever channel works best
+                for you. For collaborations and partnerships,
+                email is usually the best place to start.
+            </p>
+
+        </div>
+
+
+        <div class="contact-cards">
+
+            <a
+                class="contact-card blue-contact"
+                href="mailto:hello@frypals.org"
+            >
+
+                <span class="contact-icon">
+                    ✉
+                </span>
+
+                <small>
+                    EMAIL
+                </small>
+
+                <h3>
+                    hello@frypals.org
+                </h3>
+
+                <span class="contact-arrow">
+                    ↗
+                </span>
+
+            </a>
+
+
+            <a
+                class="contact-card orange-contact"
+                href="#"
+            >
+
+                <span class="contact-icon">
+                    ◎
+                </span>
+
+                <small>
+                    INSTAGRAM
+                </small>
+
+                <h3>
+                    @frypals
+                </h3>
+
+                <span class="contact-arrow">
+                    ↗
+                </span>
+
+            </a>
+
+
+            <div class="contact-card cream-contact">
+
+                <span class="contact-icon">
+                    📍
+                </span>
+
+                <small>
+                    BASED IN
+                </small>
+
+                <h3>
+                    DEPOK, INDONESIA
+                </h3>
+
+                <span class="contact-arrow">
+                    •
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT FORM ================= -->
+
+    <section class="contact-form-section">
+
+        <div class="form-heading">
+
+            <div class="section-tag">
+                03. SEND A MESSAGE
+            </div>
+
+            <h2>
+                WHAT'S<br>
+                ON YOUR <span>MIND?</span>
+            </h2>
+
+            <p>
+                Tell us what you're looking for and we'll get
+                back to you as soon as we can.
+            </p>
+
+        </div>
+
+
+        <form
+            class="contact-form"
+            id="contactForm"
+        >
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        NAME
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        EMAIL
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="reason">
+                    I'M CONTACTING FRYPALS ABOUT...
+                </label>
+
+                <select
+                    id="reason"
+                    name="reason"
+                    required
+                >
+
+                    <option value="">
+                        Select one
+                    </option>
+
+                    <option value="collaboration">
+                        Collaboration
+                    </option>
+
+                    <option value="used-oil">
+                        Used Cooking Oil
+                    </option>
+
+                    <option value="soap">
+                        FryPals Soap
+                    </option>
+
+                    <option value="frocal">
+                        Frocals / Local Business
+                    </option>
+
+                    <option value="volunteer">
+                        Volunteering
+                    </option>
+
+                    <option value="other">
+                        Something Else
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    MESSAGE
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="7"
+                    placeholder="Tell us what's up..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="primary-button submit-button"
+            >
+                SEND MESSAGE
+                <span>→</span>
+            </button>
+
+            <p
+                class="form-status"
+                id="formStatus"
+            ></p>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FAQ ================= -->
+
+    <section class="contact-faq">
+
+        <div class="section-tag">
+            04. QUICK QUESTIONS
+        </div>
+
+        <h2>
+            BEFORE YOU<br>
+            <span>MESSAGE US.</span>
+        </h2>
+
+
+        <div class="faq-list">
+
+            <details>
+
+                <summary>
+                    How can I become a Frocal?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    If you run a local business or know a local seller
+                    who deserves more visibility, contact us through
+                    the form and tell us their story.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Can I work with FryPals?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Absolutely. We welcome collaborations with schools,
+                    businesses, communities, creators, and organizations.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    How can I contribute used cooking oil?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Contact us first so we can provide the current
+                    collection instructions and available drop-off
+                    information.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Where can I find FryPals products?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Product availability may change, so contact us
+                    directly for the latest information.
+                </p>
+
+            </details>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FINAL CTA ================= -->
+
+    <section class="contact-final">
+
+        <div class="final-contact-circle circle-contact-a"></div>
+        <div class="final-contact-circle circle-contact-b"></div>
+
+        <div class="contact-final-content">
+
+            <div class="section-tag">
+                FRYPALS
+            </div>
+
+            <h2>
+                ONE MESSAGE<br>
+                CAN START<br>
+                <span>SOMETHING.</span>
+            </h2>
+
+            <a
+                href="mailto:hello@frypals.org"
+                class="primary-button"
+            >
+                SAY HELLO →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            FRY<span>PALS</span>
+        </div>
+
+        <p>
+            Turning used cooking oil into sustainable value.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="about.html">About</a>
+            <a href="frocals.html">Frocals</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="join.html">Join</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 FryPals. Built with purpose.
+        </div>
+
+    </footer>
+
+
+    <script src="contact.js"></script>
+
+</body>
+</html>

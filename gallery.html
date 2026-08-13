@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | FryPals</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-bubble">◉</span>
+            <span>FRY<span class="orange-text">PALS</span></span>
+        </a>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="frocals.html">FROCALS</a>
+            <a href="gallery.html" class="active">GALLERY</a>
+            <a href="join.html">JOIN THE MOVEMENT</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+
+        <a href="join.html" class="nav-button">
+            JOIN US <span>↗</span>
+        </a>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="gallery-hero">
+
+        <div class="gallery-bubble gallery-bubble-1"></div>
+        <div class="gallery-bubble gallery-bubble-2"></div>
+        <div class="gallery-bubble gallery-bubble-3"></div>
+
+        <div class="gallery-hero-content">
+
+            <div class="section-tag">
+                01. OUR MOMENTS
+            </div>
+
+            <h1>
+                SEE THE<br>
+                <span>JOURNEY.</span>
+            </h1>
+
+            <p>
+                From our first experiments to community events,
+                every photo captures another part of the FryPals story.
+            </p>
+
+        </div>
+
+        <div class="gallery-sticker">
+            <span>CAPTURE</span>
+            <strong>THE<br>MOMENT</strong>
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section class="gallery-section">
+
+        <div class="gallery-header">
+
+            <div>
+
+                <div class="section-tag">
+                    02. GALLERY
+                </div>
+
+                <h2>
+                    FRYPALS<br>
+                    <span>IN ACTION.</span>
+                </h2>
+
+            </div>
+
+            <p>
+                Explore our experiments, competitions,
+                community activities, and the people behind FryPals.
+            </p>
+
+        </div>
+
+
+        <!-- FILTERS -->
+
+        <div class="gallery-filters">
+
+            <button class="gallery-filter active" data-filter="all">
+                ALL
+            </button>
+
+            <button class="gallery-filter" data-filter="project">
+                PROJECT
+            </button>
+
+            <button class="gallery-filter" data-filter="competition">
+                COMPETITIONS
+            </button>
+
+            <button class="gallery-filter" data-filter="community">
+                COMMUNITY
+            </button>
+
+            <button class="gallery-filter" data-filter="frocals">
+                FROCALS
+            </button>
+
+        </div>
+
+
+        <!-- ================= PHOTO GRID ================= -->
+
+        <div class="gallery-grid">
+
+            <!-- PHOTO 1 -->
+
+            <article
+                class="gallery-item gallery-large"
+                data-category="project"
+                data-image="images/gallery1.jpg"
+                data-title="FryPals Prototype"
+                data-caption="Our early prototype taking shape."
+                data-category-name="PROJECT"
+            >
+
+                <img
+                    src="images/gallery1.jpg"
+                    alt="FryPals prototype"
+                >
+
+                <div class="gallery-overlay">
+
+                    <span>PROJECT</span>
+
+                    <h3>
+                        FRYPALS PROTOTYPE
+                    </h3>
+
+                    <strong>
+                        ↗
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+            <!-- PHOTO 2 -->
+
+            <article
+                class="gallery-item"
+                data-category="competition"
+                data-image="images/gallery2.jpg"
+                data-title="Competition Day"
+                data-caption="Representing FryPals during an entrepreneurship competition."
+                data-category-name="COMPETITION"
+            >
+
+                <img
+                    src="images/gallery2.jpg"
+                    alt="FryPals competition"
+                >
+
+                <div class="gallery-overlay">
+
+                    <span>COMPETITION</span>
+
+                    <h3>
+                        COMPETITION DAY
+                    </h3>
+
+                    <strong>
+                        ↗
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+            <!-- PHOTO 3 -->
+
+            <article
+                class="gallery-item"
+                data-category="project"
+                data-image="images/gallery3.jpg"
+                data-title="Soap Making"
+                data-caption="Experimenting with the transformation of used cooking oil into soap."
+                data-category-name="PROJECT"
+            >
+
+                <img
+                    src="images/gallery3.jpg"
+                    alt="Soap making"
+                >
+
+                <div class="gallery-overlay">
+
+                    <span>PROJECT</span>
+
+                    <h3>
+                        SOAP MAKING
+                    </h3>
+
+                    <strong>
+                        ↗
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+            <!-- PHOTO 4 -->
+
+            <article
+                class="gallery-item gallery-tall"
+                data-category="community"
+                data-image="images/gallery4.jpg"
+                data-title="Community Day"
+                data-caption="Connecting FryPals with our local community."
+                data-category-name="COMMUNITY"
+            >
+
+                <img
+                    src="images/gallery4.jpg"
+                    alt="FryPals community event"
+                >
+
+                <div class="gallery-overlay">
+
+                    <span>COMMUNITY</span>
+
+                    <h3>
+                        COMMUNITY DAY
+                    </h3>
+
+                    <strong>
+                        ↗
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+            <!-- PHOTO 5 -->
+
+            <article
+                class="gallery-item"
+                data-category="frocals"
+                data-image="images/gallery5.jpg"
+                data-title="Meeting Our Frocals"
+                data-caption="Getting to know the local sellers in our community."
+                data-category-name="FROCALS"
+            >
+
+                <img
+                    src="images/gallery5.jpg"
+                    alt="Frocal seller"
+                >
+
+                <div class="gallery-overlay">
+
+                    <span>FROCALS</span>
+
+                    <h3>
+                        LOCAL STORIES
+                    </h3>
+
+                    <strong>
+                        ↗
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+            <!-- PHOTO 6 -->
+
+            <article
+                class="gallery-item gallery-wide"
+                data-category="competition"
+                data-image="images/gallery6.jpg"
+                data-title="GENIUS Olympiad"
+                data-caption="Presenting FryPals on an international stage."
+                data-category-name="COMPETITION"
+            >
+
+                <img
+                    src="images/gallery6.jpg"
+                    alt="FryPals presentation"
+                >
+
+                <div class="gallery-overlay">
+
+                    <span>COMPETITION</span>
+
+                    <h3>
+                        INTERNATIONAL STAGE
+                    </h3>
+
+                    <strong>
+                        ↗
+                    </strong>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LIGHTBOX ================= -->
+
+    <div class="gallery-lightbox" id="galleryLightbox">
+
+        <div class="lightbox-backdrop"></div>
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Close image"
+        >
+            ×
+        </button>
+
+        <div class="lightbox-content">
+
+            <div class="lightbox-image-wrap">
+
+                <img
+                    id="lightboxImage"
+                    src=""
+                    alt="Gallery image"
+                >
+
+            </div>
+
+            <div class="lightbox-info">
+
+                <span id="lightboxCategory">
+                    PROJECT
+                </span>
+
+                <h2 id="lightboxTitle">
+                    Gallery Title
+                </h2>
+
+                <p id="lightboxCaption">
+                    Gallery caption.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= ADD PHOTO CTA ================= -->
+
+    <section class="gallery-cta">
+
+        <div class="gallery-cta-inner">
+
+            <div class="section-tag">
+                KEEP GROWING
+            </div>
+
+            <h2>
+                EVERY<br>
+                <span>MOMENT</span><br>
+                MATTERS.
+            </h2>
+
+            <p>
+                FryPals is still growing. And we're always
+                creating new moments worth remembering.
+            </p>
+
+            <a href="join.html" class="primary-button">
+                JOIN THE JOURNEY →
+            </a>
+
+        </div>
+
+        <div class="gallery-cta-circle"></div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            FRY<span>PALS</span>
+        </div>
+
+        <p>
+            Turning used cooking oil into sustainable value.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="about.html">About</a>
+            <a href="frocals.html">Frocals</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="join.html">Join</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 FryPals. Built with purpose.
+        </div>
+
+    </footer>
+
+
+    <script src="gallery.js"></script>
+
+</body>
+</html>
