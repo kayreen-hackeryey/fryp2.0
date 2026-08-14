@@ -143,7 +143,7 @@
 
     background: var(--blue);
 
-    color: white;
+    color: #000000;
 
     border: var(--border);
 
@@ -584,7 +584,7 @@
 
     background: var(--black);
 
-    color: white;
+    color: hsl(215, 99%, 70%);
 
 }
 
@@ -775,7 +775,7 @@
 
     background: var(--blue);
 
-    color: white;
+    color: #fff5f5;
 
 }
 

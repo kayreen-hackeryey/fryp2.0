@@ -686,3 +686,50 @@
     }
 
 }
+/* ================= CONTACT TEXT COLORS ================= */
+
+/* Main blue section */
+.contact-info-section {
+    color: var(--text);
+}
+
+.contact-intro h2 {
+    color: var(--text);
+}
+
+.contact-intro p {
+    color: var(--muted);
+}
+
+
+/* White contact card */
+.blue-contact {
+    color: var(--text);
+}
+
+.blue-contact small,
+.blue-contact h3 {
+    color: var(--text);
+}
+
+
+/* Cream contact card */
+.cream-contact {
+    color: var(--text);
+}
+
+.cream-contact small,
+.cream-contact h3 {
+    color: var(--text);
+}
+
+
+/* Orange contact card */
+.orange-contact {
+    color: white;
+}
+
+.orange-contact small,
+.orange-contact h3 {
+    color: white;
+}

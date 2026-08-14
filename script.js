@@ -1,35 +1,58 @@
-/* ==================================================
-   FRYPULSE HERO SLIDESHOW
-================================================== */
+/* ================= HERO SLIDESHOW ================= */
 
-const slides = document.querySelectorAll(".hero-slide");
-const slideNumber = document.querySelector(".slide-number");
-const progress = document.querySelector(".indicator-progress");
+const heroSlides = document.querySelectorAll(".hero-slide");
 
 let currentSlide = 0;
 
-function changeSlide() {
+function nextHeroSlide() {
 
-    slides[currentSlide].classList.remove("active");
-
-    currentSlide++;
-
-    if (currentSlide >= slides.length) {
-        currentSlide = 0;
+    if (!heroSlides.length) {
+        return;
     }
 
-    slides[currentSlide].classList.add("active");
+    heroSlides[currentSlide].classList.remove("active");
 
-    slideNumber.textContent =
-        String(currentSlide + 1).padStart(2, "0");
+    currentSlide =
+        (currentSlide + 1) % heroSlides.length;
 
-    progress.style.width =
-        `${((currentSlide + 1) / slides.length) * 100}%`;
+    heroSlides[currentSlide].classList.add("active");
 }
 
+setInterval(nextHeroSlide, 4500);
 
-/*
-   Change image every 4 seconds
-*/
 
-setInterval(changeSlide, 4000);
+/* ================= MOBILE MENU ================= */
+
+const mobileMenuButton =
+    document.getElementById("mobileMenuButton");
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+if (mobileMenuButton && mobileMenu) {
+
+    mobileMenuButton.addEventListener("click", () => {
+
+        mobileMenu.classList.toggle("show");
+
+        mobileMenuButton.textContent =
+            mobileMenu.classList.contains("show")
+                ? "×"
+                : "☰";
+
+    });
+
+
+    document.querySelectorAll(".mobile-menu a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            mobileMenu.classList.remove("show");
+
+            mobileMenuButton.textContent = "☰";
+
+        });
+
+    });
+
+}

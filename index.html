@@ -4,190 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Frypals Turning Waste Into Value</title>
+    <title>FryPals | Turning Waste Into Value</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-
+    <!-- NAVBAR -->
     <header class="navbar">
 
         <a href="index.html" class="logo">
-            <span class="logo-bubble">◉</span>
-            <span>FRY<span class="orange-text">PULSE</span></span>
+
+            <span class="logo-mark">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+
+            <span class="logo-text">
+                Fry<span>Pals</span>
+            </span>
+
         </a>
 
-        <nav>
-            <a href="index.html" class="active">HOME</a>
-            <a href="about.html">ABOUT US</a>
-            <a href="frocals.html">FROCALS</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="join.html">JOIN THE MOVEMENT</a>
-            <a href="contact.html">CONTACT</a>
+        <nav class="desktop-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="frocals.html">Frocals</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="join.html">Join</a>
         </nav>
 
-        <a href="join.html" class="nav-button">
-            JOIN US
-            <span>↗</span>
+        <a href="contact.html" class="contact-button">
+            Contact <span>↗</span>
         </a>
+
+        <button class="mobile-menu-button" id="mobileMenuButton">
+            ☰
+        </button>
 
     </header>
 
 
-    <!-- ================= HERO ================= -->
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="frocals.html">Frocals</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="join.html">Join the Movement</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
 
     <main>
 
+        <!-- HERO -->
         <section class="hero">
 
-            <!-- Background images -->
-            <div class="hero-slide active">
-                <img src="images/hero1.jpg" alt="FryPals activity">
-            </div>
+            <div class="hero-copy">
 
-            <div class="hero-slide">
-                <img src="images/hero2.jpg" alt="FryPals project">
-            </div>
-
-            <div class="hero-slide">
-                <img src="images/hero3.jpg" alt="FryPalscommunity">
-            </div>
-
-            <div class="hero-slide">
-                <img src="images/hero4.jpg" alt="FryPals soap">
-            </div>
-
-
-            <!-- Dark overlay -->
-            <div class="hero-overlay"></div>
-
-
-            <!-- Floating bubbles -->
-
-            <span class="bubble bubble-1"></span>
-            <span class="bubble bubble-2"></span>
-            <span class="bubble bubble-3"></span>
-            <span class="bubble bubble-4"></span>
-            <span class="bubble bubble-5"></span>
-
-
-            <!-- Hero content -->
-
-            <div class="hero-content">
-
-                <div class="small-label">
-                    🫧 A YOUTH-LED MOVEMENT
+                <div class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    YOUTH-LED SUSTAINABILITY
                 </div>
 
                 <h1>
-                    TURNING<br>
-                    <span>WASTE</span> INTO<br>
-                    VALUE.
+                    Give waste
+                    <em>a second life.</em>
                 </h1>
 
-                <p>
-                    FryPals transforms used cooking oil into sustainable
-                    possibilities while creating opportunities for our
-                    communities.
+                <p class="hero-description">
+                    FryPals turns used cooking oil into sustainable
+                    possibilities — while connecting people with
+                    the communities around them.
                 </p>
 
-                <div class="hero-buttons">
+                <div class="hero-actions">
 
                     <a href="about.html" class="primary-button">
-                        DISCOVER FryPals
+                        Explore FryPals
                         <span>→</span>
                     </a>
 
-                    <a href="frocals.html" class="secondary-button">
-                        MEET OUR FROCALS
+                    <a href="frocals.html" class="text-button">
+                        Meet our Frocals
+                        <span>↗</span>
                     </a>
 
                 </div>
 
+                <div class="hero-mini-stat">
+
+                    <div class="stat-line"></div>
+
+                    <div>
+                        <strong>01</strong>
+                        <span>idea → impact</span>
+                    </div>
+
+                </div>
+
             </div>
 
 
-            <!-- Slide indicator -->
+            <!-- HERO IMAGE -->
 
-            <div class="slide-indicator">
+            <div class="hero-visual">
 
-                <span class="slide-number">01</span>
+                <div class="hero-photo-frame">
 
-                <div class="indicator-line">
-                    <div class="indicator-progress"></div>
+                    <div class="hero-slide active">
+                        <img
+                            src="images/hero1.jpg"
+                            alt="FryPals project"
+                        >
+                    </div>
+
+                    <div class="hero-slide">
+                        <img
+                            src="images/hero2.jpg"
+                            alt="FryPals community"
+                        >
+                    </div>
+
+                    <div class="hero-slide">
+                        <img
+                            src="images/hero3.jpg"
+                            alt="FryPals presentation"
+                        >
+                    </div>
+
                 </div>
 
-                <span>04</span>
+                <div class="hero-caption">
+                    <span>FRYPALS</span>
+                    <p>Turning everyday waste into something useful.</p>
+                </div>
+
+                <div class="soap-bubble big-bubble">
+                    <span>🫧</span>
+                </div>
+
+                <div class="soap-bubble small-bubble">
+                    <span></span>
+                </div>
+
+                <div class="orange-orb"></div>
 
             </div>
 
         </section>
 
 
-        <!-- ================= MOVING BANNER ================= -->
+        <!-- INTRO -->
+        <section class="intro-section">
 
-        <section class="ticker">
-
-            <div class="ticker-track">
-
-                <span>FryPals</span>
-                <span>✦</span>
-                <span>TURN WASTE INTO VALUE</span>
-                <span>✦</span>
-                <span>BUILD A BETTER COMMUNITY</span>
-                <span>✦</span>
-
-                <span>FryPals</span>
-                <span>✦</span>
-                <span>TURN WASTE INTO VALUE</span>
-                <span>✦</span>
-                <span>BUILD A BETTER COMMUNITY</span>
-                <span>✦</span>
-
+            <div class="section-label">
+                OUR IDEA
             </div>
 
-        </section>
+            <div class="intro-layout">
 
+                <h2>
+                    What if waste
+                    <span>wasn't the end?</span>
+                </h2>
 
-        <!-- ================= INTRO ================= -->
+                <div class="intro-copy">
 
-        <section class="intro section">
-
-            <div class="section-tag">
-                01. OUR STORY
-            </div>
-
-            <div class="intro-grid">
-
-                <div>
-
-                    <h2>
-                        WHAT IF<br>
-                        <span>WASTE</span><br>
-                        HAD A SECOND LIFE?
-                    </h2>
-
-                </div>
-
-                <div class="intro-text">
-
-                    <p class="big-text">
-                        FryPals is a youth-led initiative turning
-                        used cooking oil into something useful.
+                    <p>
+                        Cooking oil is part of everyday life.
+                        We wanted to rethink what happens after
+                        it has been used.
                     </p>
 
                     <p>
-                        Instead of allowing used cooking oil to become
-                        waste, we explore ways to transform it into
-                        sustainable products while encouraging people
-                        to rethink the value of everyday waste.
+                        FryPals explores how used cooking oil can
+                        become useful again — starting with
+                        sustainable liquid soap.
                     </p>
 
-                    <a href="about.html" class="text-link">
-                        LEARN OUR STORY →
+                    <a href="about.html" class="underline-link">
+                        Learn our story →
                     </a>
 
                 </div>
@@ -197,94 +199,87 @@
         </section>
 
 
-        <!-- ================= WHAT WE DO ================= -->
+        <!-- PROCESS -->
+        <section class="process-section">
 
-        <section class="what-we-do section">
+            <div class="process-heading">
 
-            <div class="section-heading">
-
-                <div class="section-tag">
-                    02. WHAT WE DO
+                <div class="section-label">
+                    HOW IT WORKS
                 </div>
 
                 <h2>
-                    SMALL ACTIONS.<br>
-                    <span>REAL IMPACT.</span>
+                    From leftover
+                    <span>to useful.</span>
                 </h2>
 
             </div>
 
 
-            <div class="feature-grid">
+            <div class="process-grid">
 
-                <!-- Card 1 -->
+                <article class="process-card blue-card">
 
-                <article class="feature-card blue-card">
-
-                    <div class="card-number">01</div>
-
-                    <div class="card-icon">
+                    <div class="process-icon">
                         🛢️
                     </div>
 
+                    <span class="process-number">
+                        01
+                    </span>
+
                     <h3>
-                        COLLECT
+                        Collect
                     </h3>
 
                     <p>
-                        We encourage the responsible collection
-                        of used cooking oil before it becomes waste.
+                        Used cooking oil is collected instead
+                        of being treated as ordinary waste.
                     </p>
-
-                    <span class="card-arrow">↗</span>
 
                 </article>
 
 
-                <!-- Card 2 -->
+                <article class="process-card orange-card">
 
-                <article class="feature-card orange-card">
+                    <div class="process-icon">
+                        ⚗️
+                    </div>
 
-                    <div class="card-number">02</div>
+                    <span class="process-number">
+                        02
+                    </span>
 
-                    <div class="card-icon">
+                    <h3>
+                        Transform
+                    </h3>
+
+                    <p>
+                        Through our process, the oil can be
+                        transformed into useful liquid soap.
+                    </p>
+
+                </article>
+
+
+                <article class="process-card soft-blue-card">
+
+                    <div class="process-icon">
                         🧼
                     </div>
 
+                    <span class="process-number">
+                        03
+                    </span>
+
                     <h3>
-                        TRANSFORM
+                        Reuse
                     </h3>
 
                     <p>
-                        Used cooking oil can be transformed into
-                        useful products such as sustainable soap.
+                        A discarded resource gets another
+                        purpose — and the cycle continues.
                     </p>
-
-                    <span class="card-arrow">↗</span>
-
-                </article>
-
-
-                <!-- Card 3 -->
-
-                <article class="feature-card cream-card">
-
-                    <div class="card-number">03</div>
-
-                    <div class="card-icon">
-                        🤝
-                    </div>
-
-                    <h3>
-                        CONNECT
-                    </h3>
-
-                    <p>
-                        Through Frocals, we also spotlight local
-                        sellers and help communities discover them.
-                    </p>
-
-                    <span class="card-arrow">↗</span>
 
                 </article>
 
@@ -293,85 +288,137 @@
         </section>
 
 
-        <!-- ================= FROCALS PREVIEW ================= -->
+        <!-- FROCALS -->
+        <section class="frocals-section">
 
-        <section class="frocals-preview section">
-
-            <div class="frocals-heading">
+            <div class="frocals-top">
 
                 <div>
-                    <div class="section-tag">
-                        03. FROCALS
+
+                    <div class="section-label">
+                        FROCALS
                     </div>
 
                     <h2>
-                        DISCOVER<br>
-                        <span>LOCAL.</span>
+                        Good ideas
+                        <span>grow locally.</span>
                     </h2>
+
                 </div>
 
                 <p>
-                    Meet the local sellers around us,
-                    discover their stories, and support
-                    their businesses.
+                    FryPals also shines a light on local sellers
+                    and small businesses in our community.
                 </p>
 
             </div>
 
 
-            <div class="frocals-cards">
+            <div class="frocal-preview-grid">
 
-                <div class="frocal-card">
+                <article class="frocal-preview">
 
                     <div class="frocal-image">
-                        <img src="images/frocal1.jpg" alt="Local seller">
+                        <img
+                            src="images/frocal1.jpg"
+                            alt="Local seller"
+                        >
                     </div>
 
-                    <div class="frocal-info">
+                    <div class="frocal-content">
 
-                        <span>DEPOK</span>
+                        <div>
 
-                        <h3>
-                            YOUR FIRST FROCAL
-                        </h3>
+                            <span>DEPOK</span>
 
-                        <p>
-                            Local food • Community seller
-                        </p>
+                            <h3>
+                                Your first Frocal
+                            </h3>
+
+                        </div>
 
                         <a href="frocals.html">
-                            EXPLORE →
+                            →
                         </a>
 
                     </div>
 
+                </article>
+
+
+                <article class="frocal-preview frocal-preview-soft">
+
+                    <div class="frocal-image">
+                        <img
+                            src="images/frocal2.jpg"
+                            alt="Local business"
+                        >
+                    </div>
+
+                    <div class="frocal-content">
+
+                        <div>
+
+                            <span>LOCAL STORIES</span>
+
+                            <h3>
+                                More people to discover
+                            </h3>
+
+                        </div>
+
+                        <a href="frocals.html">
+                            →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <a href="frocals.html" class="section-link">
+                Discover all Frocals →
+            </a>
+
+        </section>
+
+
+        <!-- IMPACT -->
+        <section class="impact-section">
+
+            <div class="impact-copy">
+
+                <div class="section-label">
+                    WHY IT MATTERS
                 </div>
 
+                <h2>
+                    Small actions
+                    can create a
+                    <span>ripple.</span>
+                </h2>
 
-                <div class="frocal-card">
+                <p>
+                    We believe sustainability does not always
+                    start with something huge. Sometimes it starts
+                    with one bottle of oil, one idea, or one person
+                    willing to try something different.
+                </p>
 
-                    <div class="frocal-image">
-                        <img src="images/frocal2.jpg" alt="Local food seller">
-                    </div>
+            </div>
 
-                    <div class="frocal-info">
 
-                        <span>LOCAL</span>
+            <div class="impact-visual">
 
-                        <h3>
-                            MORE STORIES
-                        </h3>
+                <div class="ripple ripple-1"></div>
+                <div class="ripple ripple-2"></div>
+                <div class="ripple ripple-3"></div>
 
-                        <p>
-                            Discover more local businesses.
-                        </p>
-
-                        <a href="frocals.html">
-                            EXPLORE →
-                        </a>
-
-                    </div>
-
+                <div class="impact-center">
+                    <span>FRY</span>
+                    <strong>PALS</strong>
                 </div>
 
             </div>
@@ -379,36 +426,43 @@
         </section>
 
 
-        <!-- ================= CTA ================= -->
+        <!-- FINAL CTA -->
+        <section class="final-section">
 
-        <section class="cta">
-
-            <div class="cta-bubbles">
+            <div class="final-bubbles">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
 
-            <div class="cta-content">
+            <div class="final-content">
 
-                <div class="section-tag">
-                    READY TO JOIN?
+                <div class="section-label light-label">
+                    READY?
                 </div>
 
                 <h2>
-                    LET'S MAKE<br>
-                    <span>WASTE MATTER.</span>
+                    Let's make
+                    waste <span>matter.</span>
                 </h2>
 
                 <p>
-                    Whether you want to contribute used cooking oil,
-                    support a local seller, or collaborate with FryPals,
-                    there's a place for you here.
+                    Explore FryPals, discover a local Frocal,
+                    or become part of the movement.
                 </p>
 
-                <a href="join.html" class="primary-button dark-button">
-                    JOIN THE MOVEMENT →
-                </a>
+                <div class="hero-actions">
+
+                    <a href="join.html" class="primary-button white-button">
+                        Join the Movement
+                        <span>→</span>
+                    </a>
+
+                    <a href="contact.html" class="final-text-link">
+                        Get in touch ↗
+                    </a>
+
+                </div>
 
             </div>
 
@@ -417,30 +471,41 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- FOOTER -->
 
     <footer>
 
-        <div class="footer-logo">
-            FRY<span>PULSE</span>
+        <div class="footer-inner">
+
+            <div>
+
+                <a href="index.html" class="footer-brand">
+                    Fry<span>Pals</span>
+                </a>
+
+                <p>
+                    Turning used cooking oil into sustainable value.
+                </p>
+
+            </div>
+
+            <div class="footer-navigation">
+
+                <a href="about.html">About Us</a>
+                <a href="frocals.html">Frocals</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="join.html">Join</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
         </div>
 
-        <p>
-            Turning used cooking oil into sustainable value.
-        </p>
+        <div class="footer-bottom">
 
-        <div class="footer-links">
+            <span>© 2026 FryPals</span>
+            <span>Built with purpose.</span>
 
-            <a href="about.html">About</a>
-            <a href="frocals.html">Frocals</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="join.html">Join</a>
-            <a href="contact.html">Contact</a>
-
-        </div>
-
-        <div class="copyright">
-            © 2026 Frypals. Built with purpose.
         </div>
 
     </footer>
