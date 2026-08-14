@@ -23,36 +23,33 @@ setInterval(nextHeroSlide, 4500);
 
 /* ================= MOBILE MENU ================= */
 
-const mobileMenuButton =
-    document.getElementById("mobileMenuButton");
-
-const mobileMenu =
-    document.getElementById("mobileMenu");
+const mobileMenuButton = document.getElementById("mobileMenuButton");
+const mobileMenu = document.getElementById("mobileMenu");
 
 if (mobileMenuButton && mobileMenu) {
 
-    mobileMenuButton.addEventListener("click", () => {
+    mobileMenuButton.addEventListener("click", function () {
 
         mobileMenu.classList.toggle("show");
 
-        mobileMenuButton.textContent =
-            mobileMenu.classList.contains("show")
-                ? "×"
-                : "☰";
+        if (mobileMenu.classList.contains("show")) {
+            mobileMenuButton.textContent = "×";
+        } else {
+            mobileMenuButton.textContent = "☰";
+        }
 
     });
 
+    const mobileLinks = mobileMenu.querySelectorAll("a");
 
-    document.querySelectorAll(".mobile-menu a").forEach(link => {
+    mobileLinks.forEach(function (link) {
 
-        link.addEventListener("click", () => {
+        link.addEventListener("click", function () {
 
             mobileMenu.classList.remove("show");
-
             mobileMenuButton.textContent = "☰";
 
         });
 
     });
-
 }
