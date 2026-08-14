@@ -1,5 +1,5 @@
 :root {
-    --orange: #F47B3A;
+    --orange: hsl(197, 89%, 59%);
     --soft-orange: #FFD8C2;
     --soft-blue: #BFE7F5;
     --light-blue: #EAF8FC;
@@ -136,8 +136,8 @@ select {
 }
 
 
-.orange-text {
-    color: var(--orange);
+.blue-text {
+    color: var(--blue);
 }
 
 
