@@ -1134,35 +1134,30 @@ footer {
 
 @media (max-width: 950px) {
 
-    /* Hide desktop navigation */
-    .desktop-nav {
-        display: none;
-    }
-
+    .desktop-nav,
     .contact-button {
         display: none;
     }
 
-    /* Show hamburger */
     .mobile-menu-button {
         display: flex;
     }
 
-    /* Mobile dropdown */
     .mobile-menu {
         display: flex;
 
         position: fixed;
 
         top: 95px;
-        right: 20px;
+        left: 50%;
 
-        width: 230px;
+        width: calc(100% - 40px);
+        max-width: 350px;
 
         flex-direction: column;
         gap: 4px;
 
-        padding: 15px;
+        padding: 12px;
 
         background: var(--cream);
 
@@ -1171,29 +1166,32 @@ footer {
 
         box-shadow: 5px 5px 0 rgba(38, 50, 56, 0.12);
 
-        z-index: 2000;
+        z-index: 9999;
 
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
 
-        transform: translateY(-10px);
+        transform: translate(-50%, -10px);
 
         transition:
-            opacity 0.25s ease,
-            transform 0.25s ease,
-            visibility 0.25s ease;
+            opacity 0.2s ease,
+            visibility 0.2s ease,
+            transform 0.2s ease;
     }
 
     .mobile-menu.show {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
-        transform: translateY(0);
+
+        transform: translate(-50%, 0);
     }
 
     .mobile-menu a {
         display: block;
+
+        width: 100%;
 
         padding: 13px 14px;
 
@@ -1265,7 +1263,6 @@ footer {
 
     .mobile-menu {
         top: 88px;
-        right: 12px;
         width: calc(100% - 24px);
         max-width: 300px;
     }
@@ -1299,94 +1296,4 @@ footer {
     .footer-bottom {
         flex-direction: column;
     }
-}
-/* =========================================================
-   MOBILE NAVBAR FIX ONLY
-========================================================= */
-
-@media (max-width: 950px) {
-
-    .desktop-nav,
-    .contact-button {
-        display: none;
-    }
-
-    .mobile-menu-button {
-        display: flex;
-    }
-
-    .mobile-menu {
-        display: flex;
-
-        position: fixed;
-        top: 95px;
-        left: 50%;
-
-        width: calc(100% - 40px);
-        max-width: 350px;
-
-        padding: 12px;
-
-        flex-direction: column;
-        gap: 4px;
-
-        background: var(--cream);
-
-        border: 2px solid var(--text);
-        border-radius: 20px;
-
-        box-shadow: 5px 5px 0 rgba(38, 50, 56, 0.12);
-
-        z-index: 9999;
-
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-
-        transform: translate(-50%, -10px);
-
-        transition:
-            opacity 0.2s ease,
-            visibility 0.2s ease,
-            transform 0.2s ease;
-    }
-
-    .mobile-menu.show {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-
-        transform: translate(-50%, 0);
-    }
-
-    .mobile-menu a {
-        display: block;
-
-        width: 100%;
-
-        padding: 13px 14px;
-
-        border-radius: 12px;
-
-        color: var(--text);
-
-        font-size: 13px;
-        font-weight: 700;
-    }
-
-    .mobile-menu a:hover {
-        background: var(--soft-blue);
-    }
-}
-
-
-/* SMALL PHONE */
-
-@media (max-width: 600px) {
-
-    .mobile-menu {
-        top: 88px;
-        width: calc(100% - 24px);
-    }
-
 }
