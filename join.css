@@ -458,7 +458,7 @@
 
 .step p {
 
-    color: #d9e1e8;
+    color: hsl(0, 0%, 0%);
 
     line-height: 1.5;
 
