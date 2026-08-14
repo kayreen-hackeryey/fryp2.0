@@ -12,13 +12,14 @@ function nextHeroSlide() {
 
     heroSlides[currentSlide].classList.remove("active");
 
-    currentSlide =
-        (currentSlide + 1) % heroSlides.length;
+    currentSlide = (currentSlide + 1) % heroSlides.length;
 
     heroSlides[currentSlide].classList.add("active");
 }
 
-setInterval(nextHeroSlide, 4500);
+if (heroSlides.length > 1) {
+    setInterval(nextHeroSlide, 4500);
+}
 
 
 /* ================= MOBILE MENU ================= */
@@ -40,6 +41,7 @@ if (mobileMenuButton && mobileMenu) {
 
     });
 
+
     const mobileLinks = mobileMenu.querySelectorAll("a");
 
     mobileLinks.forEach(function (link) {
@@ -47,9 +49,11 @@ if (mobileMenuButton && mobileMenu) {
         link.addEventListener("click", function () {
 
             mobileMenu.classList.remove("show");
+
             mobileMenuButton.textContent = "☰";
 
         });
 
     });
+
 }
